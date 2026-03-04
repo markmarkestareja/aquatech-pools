@@ -61,7 +61,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="fixed right-0 md:hidden bg-white border-t">
           <ul className="flex flex-col p-4 space-y-4">
             {navLinks.map((link) => (
               <li key={link.href}>
