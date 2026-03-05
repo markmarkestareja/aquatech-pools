@@ -24,7 +24,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="absolute w-full top-0 z-50 bg-transparent">
       <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         
         {/* Logo */}
