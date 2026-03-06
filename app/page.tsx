@@ -19,9 +19,10 @@ export default function HeroSection() {
           viverra purus dolor. Feugiat eget felis cursus viverra morbi.
         </p>
 
-        <button>
+        <div className="flex gap-4">
           <Link
             href="/"
+            className="px-6 py-3 rounded-lg bg-blue-600"
           >
             Message Us Today
           </Link>
@@ -31,7 +32,7 @@ export default function HeroSection() {
           >
             Explore What We Offer
           </Link>
-        </button>
+        </div>
       </div>
     </section>
   );
