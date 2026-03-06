@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     <header className="absolute w-full top-0 z-50 bg-transparent">
-      <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <nav className="w-full mx-auto px-6 py-4 flex justify-between items-center">
         
         {/* Logo */}
         <Link href="/" className="text-xl font-bold text-blue-600">
@@ -38,7 +38,7 @@ export default function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`transition font-medium ${
+                className={`transition font-medium px-4 hover:border-b ${
                   isActive(link.href)
                     ? "text-blue-600"
                     : "text-gray-700 hover:text-blue-600"
@@ -59,28 +59,33 @@ export default function Navbar() {
         </button>
       </nav>
 
+      <div
+        onClick={() => setIsOpen(false)}
+        className={`fixed inset-0 bg-black/40 transition-opacity duration-300 md:hidden ${
+          isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      />
+      
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="fixed right-0 md:hidden bg-white border-t">
-          <ul className="flex flex-col p-4 space-y-4">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className={`block ${
-                    isActive(link.href)
-                      ? "text-blue-600 font-semibold"
-                      : "text-gray-700"
-                  }`}
-                >
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      <div className={`fixed top-0 right-0 h-screen md:hidden bg-white border-l w-[70vw] transform transition-transform duration-300 ease-in-out ${
+        isOpen ? "translate-x-0" : "translate-x-full"
+      }`}>
+        <ul className="flex flex-col p-6 space-y-12">
+          {navLinks.map((link) => (
+            <Link
+              href={link.href}
+              onClick={() => setIsOpen(false)}
+              className={`block pt-4 ${
+                isActive(link.href)
+                ? "text-blue-600 font-semibold"
+                : "text-gray-700"
+              }`}
+            >
+              {link.name}
+            </Link>
+          ))}
+        </ul>
+      </div>
     </header>
   )
 }
