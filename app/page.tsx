@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[100vh] flex justify-center">
+    <section className="relative w-full h-[100vh] flex justify-center px-6 md:px-12 lg:px-24 xl:px-28 py-12 lg:py-16">
       {/* <Image
         src="/images/hero.jpg"
         alt="Luxury Pool"
@@ -12,23 +12,24 @@ export default function HeroSection() {
         className="object-cover"
       /> */}
 
-      <div className="text-black relative z-10 flex flex-col justify-center h-auto max-w-4xl p-6 md:p-12 lg:p-16 xl:p-24 text-center">
-        <h1 className="text-5xl/12 lg:text-7xl font-bold ">Lorem ipsum dolor sit amet consectetur.</h1>
-        <p className="text-base/7 lg:text-lg/7">
+      <div className="text-black relative z-10 flex flex-col justify-center gap-4 h-auto max-w-4xl text-center ">
+        <h1 className="text-4xl/12 md:text-5xl lg:text-6xl font-bold text-foreground-2">Lorem ipsum dolor sit amet consectetur.</h1>
+        <p className="text-base/7 lg:text-lg/7 text-foreground-2">
           Lorem ipsum dolor sit amet consectetur. Mattis diam platea massa
           viverra purus dolor. Feugiat eget felis cursus viverra morbi.
         </p>
 
-        <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row justify-center gap-2 pt-5">
           <Link
             href="/"
-            className="px-6 py-3 rounded-lg bg-blue-600"
+            className="text-xl text-foreground px-6 py-3 rounded-lg bg-primary"
           >
             Message Us Today
           </Link>
 
           <Link
             href="/"
+            className="px-6 py-3 rounded-lg bg-transparent border-2 border-primary text-primary"
           >
             Explore What We Offer
           </Link>
