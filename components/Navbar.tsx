@@ -35,13 +35,13 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
-            <li key={link.href}>
+            <li key={link.href} className="border-b-2 border-transparent hover:border-b-2 hover:border-primary transition-bg duration-100">
               <Link
                 href={link.href}
-                className={`transition font-medium px-4 hover:border-b ${
+                className={`transition font-medium px-4 ${
                   isActive(link.href)
-                    ? "text-blue-600"
-                    : "text-gray-700 hover:text-blue-600"
+                    ? "text-primary hover:bg-transparent"
+                    : "text-foreground-2 hover:text-primary"
                 }`}
               >
                 {link.name}
@@ -55,7 +55,7 @@ export default function Navbar() {
           className="md:hidden text-gray-700"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M3.5 5a1 1 0 0 0 0 2h17a1 1 0 1 0 0-2zm-1 7a1 1 0 0 1 1-1h17a1 1 0 1 1 0 2h-17a1 1 0 0 1-1-1m0 6.001a1 1 0 0 1 1-1h17a1 1 0 1 1 0 2h-17a1 1 0 0 1-1-1" clip-rule="evenodd"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" fillRule="evenodd" d="M3.5 5a1 1 0 0 0 0 2h17a1 1 0 1 0 0-2zm-1 7a1 1 0 0 1 1-1h17a1 1 0 1 1 0 2h-17a1 1 0 0 1-1-1m0 6.001a1 1 0 0 1 1-1h17a1 1 0 1 1 0 2h-17a1 1 0 0 1-1-1" clip-rule="evenodd"/></svg>
         </button>
       </nav>
 
@@ -75,7 +75,7 @@ export default function Navbar() {
             <Link
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className={`block pt-4 ${
+              className={`block pt-4 border-b-1${
                 isActive(link.href)
                 ? "text-blue-600 font-semibold"
                 : "text-gray-700"

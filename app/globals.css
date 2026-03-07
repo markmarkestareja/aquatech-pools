@@ -105,13 +105,14 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
+  --background: oklab(99.31% -0.00128 -0.00327);
+  --foreground: oklab(99.31% -0.00128 -0.00327);
+  --foreground-2: oklch(32.164% 0.10882 256.788);
+  --card: #E9F3FF;
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(60.828% 0.21304 256.72);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
