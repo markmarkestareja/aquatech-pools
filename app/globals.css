@@ -181,4 +181,8 @@ h1, h2, h3, h4, h5, h6 {
   body {
     @apply bg-background text-foreground;
   }
+
+  section {
+    @apply relative w-full px-6 md:px-12 lg:px-24 xl:px-28 py-12 lg:py-16;
+  }
 }
