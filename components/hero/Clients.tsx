@@ -30,15 +30,11 @@ const techLogos = [
   { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
 ];
 
-const imageLogos = [
-  { src: "/logos/company1.png", alt: "Company 1", href: "https://company1.com" },
-  { src: "/logos/company2.png", alt: "Company 2", href: "https://company2.com" },
-  { src: "/logos/company3.png", alt: "Company 3", href: "https://company3.com" },
-];
-
 export default function Clients() {
   return (
-    <section className="px-0 md:px-0 lg:px-0 xl:px-0" style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
+    <section className="bg-background px-0 md:px-0 lg:px-0 xl:px-0 flex flex-col gap-12" style={{ height: 'auto', position: 'relative', overflow: 'hidden' }}>
+      <h2 className="text-center">Clients Who Trusted Us</h2>
+      
       {/* Horizontal loop with icons */}
       <LogoLoopTyped
         logos={techLogos}

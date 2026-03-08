@@ -5,6 +5,7 @@
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-2: var(--background-2);
   --color-foreground: var(--foreground);
   --color-foreground-2: var(--foreground-2);
   --font-sans: var(--font-geist-sans);
@@ -106,10 +107,11 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
   --radius: 0.625rem;
-  --background: oklab(99.31% -0.00128 -0.00327);
-  --foreground: oklab(99.31% -0.00128 -0.00327);
-  --foreground-2: oklch(32.164% 0.10882 256.788);
-  --card: #E9F3FF;
+  --background: oklch(100% 0.00011 271.152);
+  --background-2: oklch(99.31% 0.00351 248.593);
+  --foreground: oklch(99.31% 0.00351 248.593);
+  --foreground-2: oklch(23.503% 0.00003 271.152);
+  --card: oklch(96.018% 0.01946 252.986);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
@@ -184,5 +186,13 @@ h1, h2, h3, h4, h5, h6 {
 
   section {
     @apply relative w-full px-6 md:px-12 lg:px-24 xl:px-28 py-12 lg:py-16;
+  }
+
+  p{
+    @apply text-base lg:text-lg;
+  }
+
+  h2{
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
   }
 }

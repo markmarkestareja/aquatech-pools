@@ -3,14 +3,14 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="h-[100vh] flex justify-center">
+        <section className="h-screen flex justify-center">
         <Image
-                src="/images/hero.jpg"
-                alt="Luxury Pool"
-                fill
-                priority
-                className="object-cover"
-            />
+            src="/images/hero.jpg"
+            alt="Luxury Pool"
+            fill
+            priority
+            className="object-cover"
+        />
 
         <div className="text-black relative z-10 flex flex-col justify-center gap-4 h-auto max-w-4xl text-center ">
             <h1 className="text-4xl/12 md:text-5xl lg:text-6xl font-bold text-foreground-2">
@@ -31,7 +31,7 @@ export default function Hero() {
 
             <Link
                 href="/"
-                className="px-6 py-3 rounded-lg bg-transparent border-2 border-primary text-primary"
+                className="text-xl px-6 py-3 rounded-lg bg-foreground text-primary"
             >
                 Explore What We Offer
             </Link>
