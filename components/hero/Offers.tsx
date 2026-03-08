@@ -1,6 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const offersCardContents = [
+    {
+        img: "pool-supplies.webp",
+        title: "Pool Supplies",
+        desc: "Lorem ipsum dolor sit amet consectetur. Vel sed aenean nibh nulla a sed. Luctus felis tristique egestas quisque lacus.",
+        link: "/",
+    },
+]
+
 export default function Offers(){
     return (
         <section className="bg-background-2 flex flex-col gap-12">
@@ -10,7 +19,11 @@ export default function Offers(){
             </div>
 
             <div className="flex flex-col md:flex-row gap-8">
-                <div className="flex flex-col gap-6 bg-card overflow-hidden rounded-2xl">
+
+                {offersCardContents.map}
+
+
+                {/* <div className="flex flex-col gap-6 bg-card overflow-hidden rounded-2xl">
                     <div className="relative w-full h-[300px] overflow-hidden rounded-2xl">
                         <Image 
                             src="/images/pool-supplies.webp"
@@ -77,7 +90,7 @@ export default function Offers(){
                             Message Us Today
                         </Link>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );
