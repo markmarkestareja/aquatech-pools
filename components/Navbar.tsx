@@ -73,9 +73,10 @@ export default function Navbar() {
         <ul className="flex flex-col p-6 space-y-12">
           {navLinks.map((link) => (
             <Link
+              key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className={`block pt-4 border-b-1${
+              className={`block pt-4 border-b ${
                 isActive(link.href)
                 ? "text-blue-600 font-semibold"
                 : "text-gray-700"

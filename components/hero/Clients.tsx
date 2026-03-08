@@ -38,7 +38,7 @@ const imageLogos = [
 
 export default function Clients() {
   return (
-    <section style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
+    <section className="px-0 md:px-0 lg:px-0 xl:px-0" style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
       {/* Horizontal loop with icons */}
       <LogoLoopTyped
         logos={techLogos}

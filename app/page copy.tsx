@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[90vh] min-h-[600px]">
+    <section className="relative w-full h-[90vh] min-h-150">
       {/* Background Image */}
       <Image
         src="/images/hero.jpg" // replace with your image
