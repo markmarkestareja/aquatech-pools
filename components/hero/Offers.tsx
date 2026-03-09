@@ -50,7 +50,7 @@ export default function Offers(){
                                 href={`${offersCardContent.link}`}
                                 className="text-xl text-foreground px-6 py-3 rounded-lg bg-primary text-center"
                             >
-                                Message Us Today
+                                See More
                             </Link>
                         </div>
                     </div>

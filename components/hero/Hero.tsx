@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { GeneratePrimaryBtn, GenerateSecondaryBtn } from "../generateBtn";
 
 export default function Hero() {
     return (
@@ -22,19 +23,18 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col md:flex-row justify-center gap-2 pt-5">
-            <Link
-                href="/"
-                className="text-xl text-foreground px-6 py-3 rounded-lg bg-primary"
-            >
-                Message Us Today
-            </Link>
+            
+            <GeneratePrimaryBtn
+                link="/"
+                label="Message Us Today"
+            />
 
-            <Link
-                href="/"
-                className="text-xl px-6 py-3 rounded-lg bg-foreground text-primary"
-            >
-                Explore What We Offer
-            </Link>
+            <GenerateSecondaryBtn
+                link="/"
+                label="Explore More"
+            />
+
+            
             </div>
         </div>
         </section>
