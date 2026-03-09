@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { GeneratePrimaryBtn, GenerateSecondaryBtn } from "../generateBtn";
 
 export default function Hero() {

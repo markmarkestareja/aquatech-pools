@@ -9,7 +9,7 @@ export function GeneratePrimaryBtn({link, label = "Explore More"} : BtnProps) {
     return (
         <Link 
             href={link}
-            className="text-lg text-foreground px-6 py-3 rounded-lg bg-primary"
+            className="text-lg text-foreground px-6 py-3 rounded-lg bg-primary text-center"
         >
             {label}
         </Link>
@@ -20,7 +20,7 @@ export function GenerateSecondaryBtn({link, label = "Explore More"} : BtnProps) 
     return (
         <Link
             href={link}
-            className="text-lg px-6 py-3 rounded-lg bg-foreground text-primary"
+            className="text-lg px-6 py-3 rounded-lg bg-foreground text-primary text-center"
         >
             {label}
         </Link>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { GeneratePrimaryBtn } from "../generateBtn";
 
 const offersCardContents = [
     {
@@ -46,12 +47,16 @@ export default function Offers(){
                                 <h3>{offersCardContent.title}</h3>
                                 <p>{offersCardContent.desc}</p>
                             </div>
-                            <Link
+                            {/* <Link
                                 href={`${offersCardContent.link}`}
                                 className="text-xl text-foreground px-6 py-3 rounded-lg bg-primary text-center"
                             >
                                 See More
-                            </Link>
+                            </Link> */}
+                            <GeneratePrimaryBtn
+                                link={`${offersCardContent.link}`}
+                                label="See More"
+                            />
                         </div>
                     </div>
                 ))}
