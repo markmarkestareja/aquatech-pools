@@ -7,6 +7,16 @@ const offersCardContents = [
         title: "Pool Supplies",
         desc: "Lorem ipsum dolor sit amet consectetur. Vel sed aenean nibh nulla a sed. Luctus felis tristique egestas quisque lacus.",
         link: "/",
+    }, {
+        img: "pool-construction.webp",
+        title: "Pool Construction",
+        desc: "Lorem ipsum dolor sit amet consectetur. Vel sed aenean nibh nulla a sed. Luctus felis tristique egestas quisque lacus.",
+        link: "/",
+    }, {
+        img: "pool-consultancy.webp",
+        title: "Pool Consultancy",
+        desc: "Lorem ipsum dolor sit amet consectetur. Vel sed aenean nibh nulla a sed. Luctus felis tristique egestas quisque lacus.",
+        link: "/",
     },
 ]
 
@@ -20,77 +30,31 @@ export default function Offers(){
 
             <div className="flex flex-col md:flex-row gap-8">
 
-                {offersCardContents.map}
-
-
-                {/* <div className="flex flex-col gap-6 bg-card overflow-hidden rounded-2xl">
-                    <div className="relative w-full h-[300px] overflow-hidden rounded-2xl">
-                        <Image 
-                            src="/images/pool-supplies.webp"
-                            alt="pool supplies"
-                            fill
-                            className="object-cover"
-                        />
-                    </div>
-                    <div className="flex flex-col gap-8 px-4 pb-8">
-                        <div className="flex flex-col gap-4">
-                            <h3>Pool Supplies</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur. Vel sed aenean nibh nulla a sed. Luctus felis tristique egestas quisque lacus.</p>
+                {offersCardContents.map((offersCardContent, index) => (
+                    <div key={index} className="flex flex-col gap-6 bg-card overflow-hidden rounded-2xl">
+                        <div className="relative w-full h-[300px] overflow-hidden rounded-2xl">
+                            <Image 
+                                src={`/images/${offersCardContent.img}`}
+                                alt={`${offersCardContent.title}`}
+                                fill
+                                className="object-cover"
+                            />
                         </div>
-                        <Link
-                            href="/"
-                            className="text-xl text-foreground px-6 py-3 rounded-lg bg-primary text-center"
-                        >
-                            Message Us Today
-                        </Link>
-                    </div>
-                </div>
 
-                <div className="flex flex-col gap-6 bg-card overflow-hidden rounded-2xl">
-                    <div className="relative w-full h-[300px] overflow-hidden rounded-2xl">
-                        <Image 
-                            src="/images/pool-construction.webp"
-                            alt="pool supplies"
-                            fill
-                            className="object-cover"
-                        />
-                    </div>
-                    <div className="flex flex-col gap-8 px-4 pb-8">
-                        <div className="flex flex-col gap-4">
-                            <h3>Pool Construction</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur. Vel sed aenean nibh nulla a sed. Luctus felis tristique egestas quisque lacus.</p>
+                        <div className="flex flex-col gap-8 px-4 pb-8">
+                            <div className="flex flex-col gap-4">
+                                <h3>{offersCardContent.title}</h3>
+                                <p>{offersCardContent.desc}</p>
+                            </div>
+                            <Link
+                                href={`${offersCardContent.link}`}
+                                className="text-xl text-foreground px-6 py-3 rounded-lg bg-primary text-center"
+                            >
+                                Message Us Today
+                            </Link>
                         </div>
-                        <Link
-                            href="/"
-                            className="text-xl text-foreground px-6 py-3 rounded-lg bg-primary text-center"
-                        >
-                            Message Us Today
-                        </Link>
                     </div>
-                </div>
-
-                <div className="flex flex-col gap-6 bg-card overflow-hidden rounded-2xl">
-                    <div className="relative w-full h-[300px] overflow-hidden rounded-2xl">
-                        <Image 
-                            src="/images/pool-consultancy.webp"
-                            alt="pool supplies"
-                            fill
-                            className="object-cover"
-                        />
-                    </div>
-                    <div className="flex flex-col gap-8 px-4 pb-8">
-                        <div className="flex flex-col gap-4">
-                            <h3>Pool Consultancy</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur. Vel sed aenean nibh nulla a sed. Luctus felis tristique egestas quisque lacus.</p>
-                        </div>
-                        <Link
-                            href="/"
-                            className="text-xl text-foreground px-6 py-3 rounded-lg bg-primary text-center"
-                        >
-                            Message Us Today
-                        </Link>
-                    </div>
-                </div> */}
+                ))}
             </div>
         </section>
     );
