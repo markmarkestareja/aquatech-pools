@@ -140,6 +140,13 @@ h1, h2, h3, h4, h5, h6 {
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --m-primary: oklch(56.872% 0.21202 258.167);
+  --m-secondary: oklch(23.531% 0.15663 268.314);
+  --m-light: oklch(96.018% 0.01946 252.986);
+  --m-lighter: oklch(99.31% 0.00351 248.593);
+  --m-dark: oklch(32.164% 0.10882 256.788);
+  --m-black: oklch(23.503% 0.00003 271.152);
 }
 
 .dark {
