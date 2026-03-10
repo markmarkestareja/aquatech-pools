@@ -32,7 +32,7 @@ const techLogos = [
 
 export default function Clients() {
   return (
-    <section className="bg-background px-0 md:px-0 lg:px-0 xl:px-0 flex flex-col gap-12" style={{ height: 'auto', position: 'relative', overflow: 'hidden' }}>
+    <section className="bg-m-lighter px-0 md:px-0 lg:px-0 xl:px-0 flex flex-col gap-12" style={{ height: 'auto', position: 'relative', overflow: 'hidden' }}>
       <h2 className="text-center">Clients Who Trusted Us</h2>
       
       {/* Horizontal loop with icons */}

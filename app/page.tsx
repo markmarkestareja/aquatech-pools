@@ -1,6 +1,7 @@
 import Hero from "@/components/hero/Hero"
 import Clients from "@/components/hero/Clients";
 import Offers from "@/components/hero/Offers";
+import WhyChooseUs from "@/components/hero/WhyChooseUs";
 
 
 export default function HeroSection() {
@@ -9,6 +10,7 @@ export default function HeroSection() {
       <Hero />
       <Clients />
       <Offers />
+      <WhyChooseUs />
     </>
   );
 }
