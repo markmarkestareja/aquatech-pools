@@ -3,7 +3,7 @@ import { GeneratePrimaryBtn } from "../generateBtn";
 
 const offersCardContents = [
     {
-        img: "pool-supplies.webp",
+        img: "pool-chlorine.webp",
         title: "Pool Supplies",
         desc: "Lorem ipsum dolor sit amet consectetur. Vel sed aenean nibh nulla a sed. Luctus felis tristique egestas quisque lacus.",
         link: "/",
@@ -22,7 +22,7 @@ const offersCardContents = [
 
 export default function Offers(){
     return (
-        <section className="bg-background-2 flex flex-col gap-12">
+        <section className="bg-m-light flex flex-col gap-12">
             <div className="flex flex-col gap-6">
                 <h2>What We Have For You</h2>
                 <p>Lorem ipsum dolor sit amet consectetur. Adipiscing aliquam lorem commodo vitae diam bibendum volutpat eu. Neque dolor nunc quis consequat eget ultrices lacus magna. In eros porta et id maecenas ornare. Nec diam at ullamcorper id vitae morbi tristique semper.</p>
@@ -31,13 +31,13 @@ export default function Offers(){
             <div className="flex flex-col md:flex-row gap-8">
 
                 {offersCardContents.map((offersCardContent, index) => (
-                    <div key={index} className="flex flex-col gap-6 bg-card overflow-hidden rounded-2xl">
+                    <div key={index} className="flex flex-col gap-6 bg-m-white overflow-hidden rounded-2xl border border-m-grey">
                         <div className="relative w-full h-[300px] overflow-hidden rounded-2xl">
                             <Image 
                                 src={`/images/${offersCardContent.img}`}
                                 alt={`${offersCardContent.title}`}
                                 fill
-                                className="object-cover"
+                                className="object-contain"
                             />
                         </div>
 

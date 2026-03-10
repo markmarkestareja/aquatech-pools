@@ -46,6 +46,16 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+
+  --color-m-primary: var(--m-primary);
+  --color-m-secondary: var(--m-secondary);
+  --color-m-white: var(--m-white);
+  --color-m-light: var(--m-light);
+  --color-m-lighter: var(--m-lighter);
+  --color-m-dark: var(--m-dark);
+  --color-m-black: var(--m-black);
+  --color-m-grey: var(--m-grey);
+  
 }
 
 /* RESET */
@@ -143,10 +153,13 @@ h1, h2, h3, h4, h5, h6 {
 
   --m-primary: oklch(56.872% 0.21202 258.167);
   --m-secondary: oklch(23.531% 0.15663 268.314);
+  --m-white: oklch(100% 0.00011 271.152);
   --m-light: oklch(96.018% 0.01946 252.986);
   --m-lighter: oklch(99.31% 0.00351 248.593);
   --m-dark: oklch(32.164% 0.10882 256.788);
   --m-black: oklch(23.503% 0.00003 271.152);
+  --m-black-light: oklch(30.227% 0.03249 267.125);
+  --m-grey: oklch(92.191% 0.0001 271.152);
 }
 
 .dark {
@@ -196,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   p{
-    @apply text-base 2xl:text-lg;
+    @apply text-base;
   }
 
   h2{

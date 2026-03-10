@@ -12,7 +12,7 @@ export default function Hero() {
             className="object-cover"
         />
 
-        <div className="text-black relative z-10 flex flex-col justify-center gap-4 h-auto max-w-4xl text-center ">
+        <div className="text-m-black relative z-10 flex flex-col justify-center gap-4 h-auto max-w-4xl text-center ">
             <h1 className="text-4xl/12 md:text-5xl lg:text-6xl font-bold text-foreground-2">
             Lorem ipsum dolor sit amet consectetur.
             </h1>
