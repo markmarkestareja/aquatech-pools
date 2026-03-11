@@ -4,17 +4,17 @@ import { GeneratePrimaryBtn } from "../generateBtn";
 const offersCardContents = [
     {
         img: "pool-chlorine.webp",
-        title: "Pool Supplies",
+        title: "CARTRIDGE POOL FITER (AQUA BRAND)",
         desc: "Lorem ipsum dolor sit amet consectetur. Vel sed aenean nibh nulla a sed. Luctus felis tristique egestas quisque lacus.",
         link: "/",
     }, {
         img: "pool-construction.webp",
-        title: "Pool Construction",
+        title: "POOL CHLORINE",
         desc: "Lorem ipsum dolor sit amet consectetur. Vel sed aenean nibh nulla a sed. Luctus felis tristique egestas quisque lacus.",
         link: "/",
     }, {
         img: "pool-consultancy.webp",
-        title: "Pool Consultancy",
+        title: "POOL PUMP (JET-FLO)",
         desc: "Lorem ipsum dolor sit amet consectetur. Vel sed aenean nibh nulla a sed. Luctus felis tristique egestas quisque lacus.",
         link: "/",
     },
