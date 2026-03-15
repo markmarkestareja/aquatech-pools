@@ -55,7 +55,7 @@
   --color-m-lighter: var(--m-lighter);
   --color-m-dark: var(--m-dark);
   --color-m-black: var(--m-black);
-  --color-m-grey: var(--m-grey);
+  --color-m-gray: var(--m-gray);
   
 }
 
@@ -152,16 +152,16 @@ h1, h2, h3, h4, h5, h6 {
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  --m-primary: oklch(56.872% 0.21202 258.167);
-  --m-primary-light: oklch(73.504% 0.13695 256.454);
-  --m-secondary: oklch(23.531% 0.15663 268.314);
-  --m-white: oklch(100% 0.00011 271.152);
-  --m-light: oklch(96.018% 0.01946 252.986);
-  --m-lighter: oklch(99.31% 0.00351 248.593);
-  --m-dark: oklch(32.164% 0.10882 256.788);
-  --m-black: oklch(23.503% 0.00003 271.152);
-  --m-black-light: oklch(30.227% 0.03249 267.125);
-  --m-grey: oklch(92.191% 0.0001 271.152);
+  --m-primary: #006ff0;
+  --m-primary-light: #6eabfe;
+  --m-secondary: #090066;
+  --m-white: #ffffff;
+  --m-light: #e9f3ff;
+  --m-lighter: #fbfdff;
+  --m-dark: #033169;
+  --m-black: #1e1e1e;
+  --m-black-light: #272e3f;
+  --m-gray: #e5e5e5;
 }
 
 .dark {
@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply text-m-black border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
