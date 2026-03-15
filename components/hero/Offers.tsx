@@ -41,7 +41,7 @@ export default function Offers(){
                             />
                         </div>
 
-                        <div className="flex flex-col justify-between border-1 min-h-75 gap-8 px-4 pb-8">
+                        <div className="flex flex-col justify-between border min-h-75 gap-8 px-4 pb-8">
                             <div className="flex flex-col gap-4">
                                 <h3>{offersCardContent.title}</h3>
                                 <p>{offersCardContent.desc}</p>
